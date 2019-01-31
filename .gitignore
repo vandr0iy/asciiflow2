@@ -4,3 +4,5 @@ closure-library/*
 *~
 _site/*
 .DS_Store
+js-compiled.js
+
