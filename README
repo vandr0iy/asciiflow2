@@ -7,9 +7,21 @@ If you get a permissions error:
 ~/asciiflow2$ chmod a+x closure-compiler.jar
 
 Run a simple web server:
-~/asciiflow2$python -m SimpleHTTPServer
+~/asciiflow2$ python -m http.server
+
+Or, if you're a debian user and still believe that python 2 is up-to-date:
+~/asciiflow2$ python -m SimpleHTTPServer
 
 Goto: http://localhost:8000/index.html
 
 When developing, use the Google JS linter, gjslint.
+
+BONUS:
+put the following in your .bashrc:
+alias asciiflow="bash -c 'cd yourasciiflowfolder && ./compile.sh && python -m http.server'"
+
+then
+source .bashrc
+
+;)
 
